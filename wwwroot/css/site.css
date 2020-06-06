@@ -72,3 +72,8 @@ body {
 section.container {
     margin-top: 12rem;
 }
+label {
+    margin-top: 1rem;
+}.progress {
+    margin-bottom: 1rem;
+}

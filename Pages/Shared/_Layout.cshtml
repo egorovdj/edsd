@@ -32,7 +32,7 @@
                         </li>
                         @if (SignInManager.IsSignedIn(User))
                         {
-                        <li id="users" class="nav-item dropdown">
+                        <li id="users" class="nav-item dropdown" href="#">
                             <a class="nav-link dropdown-toggle" rel="nofollow" data-toggle="dropdown" href="#" aria-expanded="false">Players<span class="caret"></span></a>
                             <div class="dropdown-menu" aria-labelledby="users">
                                 @foreach (var user in SignInManager.UserManager.Users)

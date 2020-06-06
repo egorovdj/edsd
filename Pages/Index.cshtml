@@ -8,19 +8,32 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <div id="controlUnit" class="btn-group" role="group">
-        <button type="button" class="btn btn-outline-primary" data-action="rock"><i class="far fa-hand-rock fa-3x fa-fw"></i></button>
-        <button type="button" class="btn btn-outline-primary" data-action="paper"><i class="far fa-hand-paper fa-3x fa-fw"></i></button>
-        <button type="button" class="btn btn-outline-primary" data-action="scissors"><i class="far fa-hand-scissors fa-3x fa-fw"></i></button>
-        <button type="button" class="btn btn-outline-primary" data-action="lizard"><i class="far fa-hand-lizard fa-3x fa-fw"></i></button>
-        <button type="button" class="btn btn-outline-primary" data-action="spock"><i class="far fa-hand-spock fa-3x fa-fw"></i></button>
+    <h2>To start the game,<small> select a sparring player from the list of players in the menu</small>.</h2>
+    <div class="row">
+        <div class="col-sm">
+            <label>remaining time for the move, sec</label>
+            <div class="progress">
+                <div id="progress" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+            </div>
+            <div id="controlUnit" class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary" data-action="rock"><i class="far fa-hand-rock fa-3x fa-fw"></i></button>
+                <button type="button" class="btn btn-outline-primary" data-action="paper"><i class="far fa-hand-paper fa-3x fa-fw"></i></button>
+                <button type="button" class="btn btn-outline-primary" data-action="scissors"><i class="far fa-hand-scissors fa-3x fa-fw"></i></button>
+                <button type="button" class="btn btn-outline-primary" data-action="lizard"><i class="far fa-hand-lizard fa-3x fa-fw"></i></button>
+                <button type="button" class="btn btn-outline-primary" data-action="spock"><i class="far fa-hand-spock fa-3x fa-fw"></i></button>
+            </div>
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+        </div>
     </div>
 }
-    else
-    {
+else
+{
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
         <p>If you want to play a test game, <a href="~/Identity/Account/Register">register</a> or <a href="~/Identity/Account/Login">log in</a>.</p>
     </div>
-    }
+}
 
